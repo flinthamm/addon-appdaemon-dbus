@@ -1,5 +1,5 @@
 ---
-name: AppDaemonDbus
+name: "AppDaemon-Dbus"
 version: dev
 slug: appdaemon_dbus
 description: Appdaemon with D-Bus support
