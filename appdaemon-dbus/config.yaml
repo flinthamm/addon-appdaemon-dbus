@@ -13,19 +13,19 @@ arch:
 init: false
 homeassistant_api: true
 uart: true
+full_access: true
+privileged: true
 ports:
   5050/tcp: 5050
 ports_description:
   5050/tcp: AppDaemon
-devices:
-  - "/dev/bus/usb:/dev/bus/usb:rwm"
 map:
   - addon_config:rw
   - homeassistant_config:rw
   - media:rw
   - share:rw
   - ssl
-  - dbus
+  - /run/dbus:/run/dbus
 options:
   system_packages: []
   python_packages: []
